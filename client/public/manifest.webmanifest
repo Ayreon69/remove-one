@@ -1,0 +1,11 @@
+{
+  "name": "Remove One",
+  "short_name": "Remove One",
+  "description": "Deux cartes posées, une seule jouée : le plus petit nombre seul gagne.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#d6d1c7",
+  "theme_color": "#d6d1c7",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
