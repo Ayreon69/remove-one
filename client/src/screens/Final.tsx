@@ -40,7 +40,7 @@ export function Final({ view }: { view: RoomView }) {
     title = 'Tu restes en cellule';
     sub = `${first?.name ?? '?'} sort en premier, après la manche ${first?.round}.`;
   } else if (mine.place === 1) {
-    title = 'Dehors en premier !';
+    title = 'Dehors en premier !';
     sub = `Dehors après la manche ${mine.round}.${locked ? ` ${locked.name} reste en cellule.` : ''}`;
   } else {
     title = `Dehors, ${placeLabel(mine.place)} place`;

@@ -272,7 +272,7 @@ function Banner({ view }: { view: RoomView }) {
     const r = g.result;
     if (r.winner) {
       tone = r.winner === view.me ? 'is-mine' : 'is-win';
-      title = r.winner === view.me ? `Ton ${r.value} gagne !` : `${nameOf(view, r.winner)} gagne avec le ${r.value}`;
+      title = r.winner === view.me ? `Ton ${r.value} gagne !` : `${nameOf(view, r.winner)} gagne avec le ${r.value}`;
       sub = `+${plural(r.value!, 'point')} et un jeton.${r.dupes.length ? ` En double : ${listing(r.dupes.map(String))}.` : ''}`;
     } else {
       tone = 'is-none';

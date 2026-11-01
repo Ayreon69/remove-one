@@ -1521,12 +1521,16 @@ strong {
   translate: 0 -2px;
 }
 
-/* Ma bulle passe à droite de mon avatar, sur mon nom, pour ne pas couvrir mes cartes. */
+/* Ma bulle passe à droite de mon avatar, à la place de mon nom, pour ne pas couvrir mes cartes. */
 .me-avatar .bubble {
   bottom: auto;
   top: 50%;
   left: 100%;
   translate: 6px -50%;
+}
+
+.me-foot:has(.bubble) :is(.me-name, .me-score) {
+  visibility: hidden;
 }
 
 /* Le calendrier. */
